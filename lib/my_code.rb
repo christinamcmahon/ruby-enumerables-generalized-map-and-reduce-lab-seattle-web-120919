@@ -9,11 +9,13 @@ end
 def reduce(source_array, start = nil)
   if start
     result = start
-    
+    i = 0 
+  else
+    result = source_array[0]
+    i = 1
   end
-  result = start
-  source_array.each do |item|
-    result = yield(result, item)
+  while i < source_array.length do
+    
   end
   result
 end
