@@ -6,7 +6,7 @@ def map(source_array)
   new_array
 end
 
-def reduce(source_array, start = 0)
+def reduce(source_array, start = nil)
   result = start
   source_array.each do |item|
     result = yield(result, item)
