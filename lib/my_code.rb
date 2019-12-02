@@ -8,6 +8,7 @@ end
 
 def reduce(source_array, start = nil)
   if start
+    result = start
     
   end
   result = start
