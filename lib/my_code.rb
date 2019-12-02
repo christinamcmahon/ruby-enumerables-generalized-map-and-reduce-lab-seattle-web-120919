@@ -9,6 +9,9 @@ end
 def reduce(source_array, start = 0)
   result = start
   source_array.each do |item|
+    if item == true 
+      return true 
+    end
     result = yield(result, item)
   end
   result
